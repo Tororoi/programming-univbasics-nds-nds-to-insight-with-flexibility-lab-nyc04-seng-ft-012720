@@ -21,7 +21,7 @@ def flatten_a_o_a(aoa)
 end
 
 def movie_with_director_name(director_name, movie_data)
-  { 
+  {
     :title => movie_data[:title],
     :worldwide_gross => movie_data[:worldwide_gross],
     :release_year => movie_data[:release_year],
@@ -56,7 +56,7 @@ def movies_with_director_key(name, movies_collection)
     result << movie_with_director_name(name,movie_data)
     i += 1
   end
-  
+
   result
 end
 
